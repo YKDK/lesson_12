@@ -1,0 +1,570 @@
+/* .wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	padding: 50px;
+} */
+
+/* .header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	background-color: yellowgreen;
+	z-index: 100;
+} */
+.main__container {
+  max-width: ;
+}
+.main__page {
+  max-width: 1800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main__lesson img{
+  max-width: 100%;
+  display: block;
+}
+
+.lesson__background {
+  background: url("../img/lesson/area.png") no-repeat 0 0 / cover, url("../img/lesson/1-1.jpg") no-repeat 0 0 / cover;
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.lesson__wplayer {
+  display: block;
+  position: absolute;
+  top: 450px;
+  left: 500px;
+  width: 20%;
+  transform: scale3d(0.3,0.3,1);
+  transition: all 3s ease 0s;
+
+}
+.lesson__background:hover .lesson__wplayer{
+  transform: rotate3d(0, 1, 0, 180deg) translate3d(300px, -160px, 0px) skew(0deg, 0deg) scale3d(1,1,1);
+  transition: all 3s ease 0s;
+}
+
+.lesson__goalkeeper {
+  display: block;
+  position: absolute;
+  top: 450px;
+  left: 1050px;
+  width: 10%;
+  transform: rotate3d(0, 0, 1, 0deg) translate3d(-250px, 200px, 100px) skew(0deg, 0deg) scale3d(0.2,0.2,1);
+  transition: all 4s ease 0s;
+}
+
+.lesson__background:hover .lesson__goalkeeper{
+  width: 20%;
+  transform: rotate3d(0, 0, 1, 360deg) translate3d(130px, -110px, 0px) skew(0deg, 0deg) scale3d(2,2,1);
+  transition: all 2s ease 4s;
+
+
+}
+.lesson__ball {
+  position: absolute;
+  top: 700px;
+  left: 360px;
+  width: 100px;
+  transform: rotate3d(0, 0, 0, 0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg) scale3d(0,0.1,1);
+  transition: all 3s ease 0s;
+
+
+}
+
+.lesson__background:hover .lesson__ball{
+  transform: rotate3d(0, 0, 0, 0deg) translate3d(1250px, -450px, 0px) skew(0deg, 0deg) scale3d(1,1,1);
+  transition: all 6s ease 4s;
+
+}
+
+.translate {
+  margin: 5px;
+  background: wheat;
+
+}
+
+[class*="__title"] {
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 1px 1px 10px rgb(20, 182, 231);
+  margin-bottom: 25px;
+}
+
+.translate__block {
+  display: inline-block;
+  margin: 5%;
+  width: 100px;
+  height: 100px;
+  background:turquoise;
+  position: relative;
+  top: 0;
+  left: 100px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px #000;
+  
+}
+.translate__yellowgreen {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background:yellowgreen; 
+  transform: translate(10px, 10px);
+  box-shadow: 1px 1px 10px rgb(240, 168, 14); 
+  transition: all 3s ease 0s;
+
+
+}
+
+.translate__yellow{
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background:yellow; 
+  transform: translate(10%, 0);
+  box-shadow: 1px 1px 10px rgb(240, 168, 14); 
+  transition: all 3s ease 0s;
+
+
+}
+.translate__violet {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background:violet;
+  box-shadow: 1px 1px 10px rgb(240, 168, 14); 
+  transform: translate(50%, 50%);
+  transition: all 3s ease 0s;
+
+}
+
+.translate:hover .translate__yellowgreen{
+  transform: translate(200%, 50%);
+  transition: all 3s ease 0s;
+
+}
+
+.translatehover .translate__yellow{
+  transform: translate(-200%, -80%);
+  transition: all 3s ease 0s;
+
+}
+.translate:hover .translate__violet{
+  transform: translate(-50%, -80%);
+  transition: all 3s ease 0s;
+
+}
+
+.translate__block:hover .translate__yellowgreen{
+  transform: translate(-50%, 30%);
+  transition: all 3s ease 0s;
+
+}
+
+.translate__block:hover .translate__yellow {
+  transform: translate(-90%, 0);
+  transition: all 3s ease 0s;
+
+}
+.translate__block:hover .translate__violet {
+  transform: translate(-10%, -10%);
+  transition: all 3s ease 0s;
+
+}
+
+.scale {
+border: 1px solid blue;
+background: tomato;
+margin-bottom: 25px;
+}
+.scale__block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background:turquoise;
+  box-shadow: 1px 1px 5px #000;
+  margin: 5%;
+  border-radius: 50%;
+  position: relative;
+  transition: all 3s ease 0s;
+
+
+
+}
+.scale__yellowgreen {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background:yellowgreen; 
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgb(1, 39, 255); 
+  transform: scale(0.5);
+  transition: all 3s ease 0s;
+
+}
+
+.scale__block:hover .scale__yellowgreen{
+transform: scale(0.7) translate(20%, 0);
+background-color: red;
+transition: all 3s ease 0s;
+
+}
+.scale__yellow {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background:yellow; 
+  box-shadow: 1px 1px 10px rgb(1, 39, 255); 
+  transition: all 3s ease 0s;
+
+
+}
+.scale__block:hover .scale__yellow{
+  transform: scale(1.5) translate(-15%, 30%);
+  background-color: greenyellow;
+  transition: all 3s ease 0s;
+
+  }
+  
+.scale__violet{
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: violet;
+  box-shadow: 1px 1px 10px rgb(1, 39, 255); 
+  transition: all 1s ease 0s;
+
+}
+
+.scale__block:hover .scale__violet {
+  transform: translate(0, 25%);
+  scale: 2;
+  background-color: rgba(245, 245, 245, 0.863);
+  box-shadow:0 0 1px #000, inset 0px 0px 30px rgb(23, 23, 24); 
+
+}
+
+.scale__green,
+.scale__orange,
+.scale__red {
+  margin: 5px auto;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  /* position: absolute; */
+}
+
+.scale__block:hover .scale__orange {
+  background:rgb(241, 188, 41); 
+  box-shadow:0px 0 5px #000, inset 0px 0px 40px rgb(49, 45, 44); 
+  width: 100%;
+  height: 50%;
+  transform: translate(0, -50%);
+  transition: all 1s ease 1s;
+
+}
+.scale__block:hover .scale__green {
+  background:rgba(115, 255, 0, 0.664); 
+  box-shadow:inset 0px 0px 20px rgb(1, 39, 255);  
+  width: 50%;
+  height: 50%;
+  transform: translate(2%, -155%);
+  transition: all 1s ease 1s;
+
+
+}
+.scale__block:hover .scale__red {
+  background:rgba(255, 0, 0, 0.438); 
+  box-shadow: 0px 0px 30px rgb(13, 13, 14);
+  width: 3%;
+  height: 50%;
+  transform: translate(40%, -260%);
+  transition: all 1s ease 1s;
+
+}
+
+.scale:hover .scale__block{
+  scale: 1.5;
+}
+
+
+.rotate {
+  background:rgba(229, 209, 209, 0.685);
+  margin-bottom: 25px;
+  height: 400px;
+}
+.rotate__block {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background:teal;
+  transition: all 1s ease 0s;
+
+}
+
+
+.rotate__block:hover .rotate__violet{
+  transform: rotate(8deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s ease 0s;
+
+  
+}
+.rotate__violet {
+  margin: 0px auto;
+  width: 300px;
+  height: 300px;
+  background: violet;
+  transition: all 1s ease 0s;
+
+}
+.rotate__block:hover .rotate__orange{
+  transform: rotate(16deg);
+  position: absolute;
+  scale: 0.9;
+  transition: all 1s ease 0s;
+
+  
+}
+
+.rotate__orange {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background: orange;
+  transform: translate(0, -100%) rotate(4deg);
+  transition: all 1s ease 0s;
+
+
+}
+
+ .rotate__block:hover .rotate__green{
+  transform: rotate(32deg);
+  position: absolute;
+  scale: 0.8;
+  transition: all 1s ease 0s;
+
+}
+
+.rotate__green {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background:green;
+  transform: translate(0, -200%) rotate(8deg);
+  transition: all 1s ease 0s;
+
+
+}
+
+
+.rotate__block:hover .rotate__red{
+  transform: rotate(64deg);
+   position: absolute;
+  scale: 0.7;
+  transition: all 1s ease 0s;
+
+
+}
+
+.rotate__red {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background: red;
+  transform: translate(0, -300%) rotate(16deg);
+  transition: all 1s ease 0s;
+
+
+}
+
+.rotate__block:hover .rotate__yellow{
+  transform: rotate(180deg);
+  position: absolute;
+  scale: 0.6;
+  transition: all 1s ease 0s;
+
+
+
+}
+
+.rotate__yellow {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background: yellow;
+  transform: translate(0, -400%) rotate(32deg);
+  transition: all 1s ease 0s;
+
+}
+
+
+
+.rotate__block:hover .rotate__yellowgreen{
+  transform: rotate(320deg);
+  scale: 0.5;
+  position: absolute;
+  transition: all 1s ease 0s;
+
+
+}
+
+.rotate__yellowgreen {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background: yellowgreen;
+  transform: translate(0, -500%) rotate(64deg);
+  transition: all 1s ease 0s;
+
+
+}
+
+.rotate__block div:hover{
+  border-radius: 50%;
+}
+
+.main__perspective img{
+  max-width: 100%;
+  display: block;
+}
+.perspective {
+position: relative;
+height: 800px;
+border: 1px solid #000;
+}
+.perspective__title {
+  margin-bottom: 100px;
+}
+
+.perspective__block{
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 0 25px 0 25px;
+  background: rgba(248, 245, 245, 0.2);
+  perspective: 1000px;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+  position: relative;
+
+
+}
+.perspective__violet {
+  background:violet;
+  width: 300px;
+  height: 300px;
+  transform: rotateX(10deg) rotateY(45deg) rotateZ(0deg) translate(-150px, 0);
+
+}
+.perspective__orange {
+  width: 300px;
+  height: 300px;
+  background:orange;
+  transform: rotateX(10deg) rotateY(-45deg) rotateZ(0deg) translate(150px, -300px);
+}
+
+.perspective__block:hover .perspective__violet{
+  transform: rotateX(0deg) rotateY(45deg) rotateZ(0deg) translate(150px, 0);
+  transition: all 1s ease 0s;
+
+}
+
+.perspective__block:hover .perspective__orange{
+  transform: rotateX(0deg) rotateY(-45deg) rotateZ(0deg) translate(-150px, -300px);
+  transition: all 1s ease 0s;
+
+}
+
+
+
+.perspective:hover .perspective__block--3d{
+  transform: rotate3d(0, 1, 1, 360deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  transition: all 2s ease 0s;
+}
+
+
+.perspective__block--3d{
+  border: 1px dashed #000;
+  perspective: 1000px;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  background:rgba(64, 224, 208, 0.5);
+  transform: rotate3d(0, 1, 1, 50deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  transition: all 2s ease 0s;
+
+
+}
+
+.perspective__red {
+  border: 1px dashed #000;
+  width: 300px;
+  height: 300px;
+  background:rgba(255, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  transform: rotate3d(0, 1, 0, -90deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  transform-origin: 0 0;
+
+
+
+}
+.perspective__green {
+  border: 1px dashed #000;
+  width: 300px;
+  height: 300px;
+  background:rgba(0, 128, 0, 0.7);
+  position: absolute;
+  left: 0;
+  transform: rotate3d(0, 1, 0, 90deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  transform-origin: 100% 0;
+
+}
+.perspective__yellowgreen {
+  border: 1px dashed #000;
+  width: 300px;
+  height: 300px;
+  background:rgba(153, 205, 50, 0.7);
+  position: absolute;
+  top: 100%;
+  transform: rotate3d(1, 0, 0, 90deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  transform-origin: 0 0;
+
+
+}
+
+.perspective__yellow {
+  border: 1px dashed #000;
+  width: 300px;
+  height: 300px;
+  background:rgba(255, 255, 0, 0.7);
+  position: absolute;
+  transform: rotate3d(1, 0, 0, 90deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  transform-origin: 0 0;
+
+}
+
+.perspective__black{
+  border: 1px dashed #000;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.7);;
+  transform: rotate3d(0, 0, 0, 0deg) translate3d(0px, 0px, 300px) skew(0deg, 0deg);
+  position: absolute;
+
+}
